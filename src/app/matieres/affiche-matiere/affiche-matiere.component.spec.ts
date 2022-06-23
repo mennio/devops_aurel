@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NotFoundComponent } from './not-found.component';
+import { AfficheMatiereComponent } from './affiche-matiere.component';
 
-describe('NotFoundComponent', () => {
-  let component: NotFoundComponent;
-  let fixture: ComponentFixture<NotFoundComponent>;
+describe('AfficheMatiereComponent', () => {
+  let component: AfficheMatiereComponent;
+  let fixture: ComponentFixture<AfficheMatiereComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NotFoundComponent ]
+      declarations: [ AfficheMatiereComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NotFoundComponent);
+    fixture = TestBed.createComponent(AfficheMatiereComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

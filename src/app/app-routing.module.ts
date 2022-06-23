@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { HelpComponent } from './pages/help/help.component';
-import { HomeComponent } from './pages/home/home.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { AfficheAbsencesComponent } from './absences/affiche-absences/affiche-absences.component';
+import { AfficheMatiereComponent } from './matieres/affiche-matiere/affiche-matiere.component';
+import { ListePromoComponent } from './promotions/liste-promo/liste-promo.component';
+import { ProfesseursComponent } from './utilisateurs/professeurs/professeurs.component';
+import { EtudiantsComponent } from './utilisateurs/etudiants/etudiants.component';
+import { AfficheSeanceComponent } from './seances/affiche-seance/affiche-seance.component';
 
 const routes: Routes = [
   {
@@ -13,24 +14,28 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   {
-    path: 'home',
-    component: HomeComponent,
+    path: 'absences',
+    component: AfficheAbsencesComponent,
   },
   {
-    path: 'profile',
-    component: ProfileComponent,
+    path: 'matiere',
+    component: AfficheMatiereComponent,
   },
   {
-    path: 'about',
-    component: AboutComponent,
+    path: 'promotions',
+    component: ListePromoComponent,
   },
   {
-    path: 'help',
-    component: HelpComponent,
+    path: 'professeurs',
+    component: ProfesseursComponent,
   },
   {
-    path: '**',
-    component: NotFoundComponent,
+    path: 'etudiants',
+    component: EtudiantsComponent,
+  },
+  {
+    path: 'seances',
+    component: AfficheSeanceComponent,
   },
 ];
 

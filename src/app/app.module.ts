@@ -9,14 +9,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { HomeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './pages/profile/profile.component';
-import { AboutComponent } from './pages/about/about.component';
-import { HelpComponent } from './pages/help/help.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { AfficheAbsencesComponent } from './absences/affiche-absences/affiche-absences.component';
+import { AfficheMatiereComponent } from './matieres/affiche-matiere/affiche-matiere.component';
+import { AfficheSeanceComponent } from './seances/affiche-seance/affiche-seance.component';
+import { ListePromoComponent } from './promotions/liste-promo/liste-promo.component';
+import { ProfesseursComponent } from './utilisateurs/professeurs/professeurs.component';
+import { EtudiantsComponent } from './utilisateurs/etudiants/etudiants.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, AboutComponent, HelpComponent, NotFoundComponent],
+  declarations: [AppComponent, SidebarComponent, AfficheAbsencesComponent, AfficheMatiereComponent, AfficheSeanceComponent, ListePromoComponent, ProfesseursComponent, EtudiantsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
