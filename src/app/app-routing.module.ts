@@ -5,6 +5,7 @@ import { AfficheMatiereComponent } from './matieres/affiche-matiere/affiche-mati
 import { ListePromoComponent } from './promotions/liste-promo/liste-promo.component';
 import { ProfesseursComponent } from './utilisateurs/professeurs/professeurs.component';
 import { EtudiantsComponent } from './utilisateurs/etudiants/etudiants.component';
+import { AddUserComponent } from './utilisateurs/add-user/add-user.component';
 import { AfficheSeanceComponent } from './seances/affiche-seance/affiche-seance.component';
 
 const routes: Routes = [
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'seances',
     component: AfficheSeanceComponent,
+  },
+  {
+    path: 'adduser',
+    component: AddUserComponent,
   },
 ];
 
